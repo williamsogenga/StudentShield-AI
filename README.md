@@ -74,7 +74,7 @@ The 11 required headers are listed in the app and `data/sample_upload.csv`; use 
 
 ## Reproducibility & academic honesty
 
-`python train.py` rebuilds all official-data model artifacts (random seed 42). If you change source data, report regenerated metrics instead of copying older numbers. The source dataset is attributed; synthetic model metrics are named `demo_...` and labelled accordingly. The **GitHub link is not included yet**: source code is published at https://github.com/williamsogenga/StudentShield-AI; generated models and data are excluded from version control and rebuilt using the setup scripts.
+`python train.py` rebuilds all official-data model artifacts (random seed 42). If you change source data, report regenerated metrics instead of copying older numbers. The source dataset is attributed; synthetic model metrics are named `demo_...` and labelled accordingly. Source repository: https://github.com/williamsogenga/StudentShield-AI. Generated models and datasets are excluded from version control and rebuilt by the setup scripts. The committed Word report and PowerPoint are **synthetic demonstration templates**; after training with the official UCI dataset, regenerate both documents using `python make_submission.py` and commit the real-data versions before final submission.
 
 ## Presentation walkthrough
 
