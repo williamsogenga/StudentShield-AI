@@ -1,0 +1,43 @@
+STUDENTSHIELD AI  —  FINAL SUBMISSION CHECKLIST (18 NOVEMBER 2026)
+=================================================================
+
+IMPORTANT STATUS: The packaged model and report are labelled SYNTHETIC DEMO.
+They are an offline software verification, NOT official assignment model results.
+To complete the real-data study, follow the steps below on a computer with internet.
+
+[ ] 1. Unzip the folder on a Windows computer (not inside ZIP Explorer).
+[ ] 2. Double-click setup_windows.bat; this installs deps, downloads the
+        4,424-row authentic UCI data, trains two real-data models,
+        regenerates the DOCX and PPTX, and launches the app.
+[ ] 3. Look for models/student_model.joblib and reports/metrics.json.
+[ ] 4. Reopen StudentShield_Report.docx. Its cover must now say:
+        'AUTHENTIC UCI DATASET — HISTORICAL PORTUGUESE RECORDS',
+        not 'SYNTHETIC DEMONSTRATION'.
+[ ] 5. Reopen StudentShield_Presentation.pptx. It should no longer show
+        'SYNTHETIC DEMO — NOT UCI RESULTS' on slides.
+[ ] 6. Fill real student name, registration no., institution/course
+        on report cover. Do not claim Kenyan validation.
+[ ] 7. Publish the source code to a GitHub repository; COPY THE REAL LINK
+        into README, documentation (Section 10), and final message.
+[ ] 8. Test Streamlit locally: Assessment, batch CSV example, model plots.
+[ ] 9. Run: python tests.py (must pass all tests).
+[ ] 10. Submit source ZIP + DOCUMENTATION + POWERPOINT + GitHub link,
+         as instructed by lecturer. Do not zip .venv/ or .git/.
+
+Source and license: Realinho et al. (2021), UCI #697, CC BY 4.0,
+https://doi.org/10.24432/C5MC89
+
+How the workflow corresponds to 10 marking criteria:
+1. Problem/objectives    -> README + Report section 1
+2. Data source           -> download_data.py + data/SOURCE.md + Report 2
+3. Cleaning              -> core.py, train.py + Report 3
+4. EDA                   -> figures + notebook + Report 4
+5. Features              -> prepare_features() + Report 5
+6. Train/tune            -> GridSearchCV in train.py + Report 6
+7. Model evaluation      -> metrics.json, confusion matrix + Report 7
+8. Interpretation        -> feature importance + Report 8
+9. Deployment            -> Streamlit app.py, setup_windows.bat + Report 9
+10. Docs and slides      -> DOCX, PPTX, README + Report 10
+
+Ethics: This prototype is for class demonstration only. Do not use real
+students' personally identifying data or make punitive decisions.

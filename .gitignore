@@ -1,0 +1,20 @@
+.venv/
+venv/
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+.DS_Store
+
+# Local data and trained models
+data/uci_students.csv
+data/demo_synthetic.csv
+models/*.joblib
+reports/demo_*
+reports/figures/
+reports/metrics.json
+reports/feature_importance.csv
+
+# Generated QA and exported artifacts
+_qa_*/
+*.zip
+*.log
